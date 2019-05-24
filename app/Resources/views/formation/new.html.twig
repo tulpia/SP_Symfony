@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Formation creation</h1>
+
+    {{ form_start(form) }}
+        {{ form_widget(form) }}
+        <input class="btn btn-primary" type="submit" value="Create" style="margin-bottom: 40px"/>
+    {{ form_end(form) }}
+
+    <a class="btn btn-dark" href="{{ path('formation_index') }}">Back to the list</a>
+{% endblock %}

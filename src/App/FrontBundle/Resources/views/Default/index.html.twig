@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <section class="block-home row">
+        <h3>Bonjour {{ user.prenom }} !</h3>
+    </section>
+    <div class="row">
+        <p>Que voulez-vous faire aujourd'hui ?</p>
+    </div>
+    <hr>
+    <section class="row">
+        <ul class="btn-list col">
+            <li><a class="btn btn-primary" href="/formation">Voir les formations</a></li>
+            <li><a class="btn btn-primary" href="{{ path('app_front_users') }}">Voir les users</a></li>
+            <li><a class="btn btn-danger" href="{{ path('fos_user_security_logout') }}">Log Out</a></li>
+        </ul>
+    </section>
+{% endblock %}

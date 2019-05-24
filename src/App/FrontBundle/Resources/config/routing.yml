@@ -1,0 +1,11 @@
+app_front_formation:
+    resource: "@AppFrontBundle/Resources/config/routing/formation.yml"
+    prefix:   /formation
+
+app_front_homepage:
+    path:     /
+    defaults: { _controller: AppFrontBundle:Default:index }
+
+app_front_users:
+    path:     /users
+    defaults: { _controller: AppFrontBundle:Default:users }

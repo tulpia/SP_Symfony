@@ -1,0 +1,32 @@
+.container {
+    margin-top: 120px;
+}
+
+.table {
+    margin-top: 60px;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 80vw;
+    }
+}
+
+.btn-list {
+    display: flex;
+    padding: 0px;
+    margin-top: 40px;
+}
+
+.btn-list li {
+    list-style-type: none;
+}
+
+.btn-list li:not(:last-child) {
+    margin-right: 20px;
+}
+
+.custom-control {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
