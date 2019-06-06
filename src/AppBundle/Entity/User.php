@@ -167,7 +167,6 @@ class User extends BaseUser
      */
     public function getDateNaissance()
     {
-        $dateContainer = $this->dateNaissance->format('d-m-Y');
-        return $dateContainer;
+        return $this->dateNaissance;
     }
 }
